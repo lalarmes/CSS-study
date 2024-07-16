@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Usuário</title>
+    <style>
+     *{
+            margin: 0;
+            padding: 0;
+        } 
+        body{
+            font-family: fantasy;
+            background: image("little-hearts.jpg") ;
+        }
+     .header{
+        background-color: hotpink;
+              display: flex;
+              padding: 15px 80px;
+              justify-content: space-between;
+            }
+            .header__logout{
+                font-family: fantasy;
+border: 2px black solid;
+border-radius: 20px;
+color: black;
+background-color: transparent;
+cursor: pointer;
+padding: 10px 25px;
+            }
+            .profile{
+                
+                background-color: rgb(252, 148, 200);
+              text-align: center;
+              padding: 15px 15px;
+            }
+        .perfil__foto{
+                
+                width: 150px; 
+        height: 150px; 
+        border-radius: 50%; 
+        border: 2px solid #ccc; 
+        object-fit: cover; 
+      
+        
+            }
+
+             .friends{
+                background-color: rgb(252, 148, 200);
+                padding: 30px 80px;
+                height: 45vh;
+                gap: 50px;
+             }
+           .friends__list{
+            display: flex;
+            gap: 50px;
+            list-style: none;
+            height: 40vh;
+           }
+           .friends__photo{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid #ccc; 
+           }
+           .friends__name{
+text-align: center;
+           }
+           .friends__tittle{
+text-align: center;
+           }
+           .gallery__tittle{
+text-align: center;
+background-color: hotpink;
+           }
+           .gallery__grade{
+            align-items: center;
+           }
+           .gallery__photo{
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 20%;
+            border: 2px solid #ccc; 
+            
+           }
+           .gallery__item{
+            
+            background-color: rgb(252, 148, 200);
+                padding: 5px 5px;
+            text-align: center;
+
+           }
+           footer{
+            background-color: hotpink;
+              display: flex;
+              padding: 15px 80px;
+              justify-content: space-around;
+           }
+           .footer__link{
+            color: black;
+           }
+
+           /* @media  and (max-width: 600px) {
+             adapta a tela 
+            .header{
+                flex-direction: column;
+                gap: 30px;
+                align-items: center;
+            }
+            .profile{
+                flex-direction: column;
+                height: 100%;
+                align-items: center;
+            }
+            .friends__tittle{
+                margin-bottom: 30px;
+            }
+            .friends__list{
+                align-items: center;
+                height: 100%;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+            }
+            .footer{
+                flex-direction: column;
+                align-items: center;
+                gap: 30px;
+            }
+           } */
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__titulo">Wonderland</h1>
+        <button class="header__logout">Logout</button>
+    </header>
+    <hr>
+    <section class="profile">
+        <img class="perfil__foto" src="BridgetVoando2.jpg" alt="Foto de Usuário">
+        <h2>Brideget</h2>
+        <p>Sugar than salt!<3</p>
+        <br>
+        <hr>
+        
+    </section>
+    <section class="friends">
+        <h2 class="friends__tittle">Amigos</h2>
+        <br><br>
+        <ul class="friends__list">
+            
+            <li class="friends_item">
+                <img class="friends__photo" src="Natty_MTloira.jpg" alt="Amigo 1">
+                <h3 class="friends__name">Natty</h3>
+            </li>
+            <li class="friends_item">
+                <img class="friends__photo" src="Ella.jpg" alt="Amigo 5">
+                <h3 class="friends__name">Ella💙</h3>
+            </li>
+            <li class="friends_item">
+                <img class="friends__photo" src="WINTERMONSTER.jpg" alt="Amigo 2">
+                <h3 class="friends__name">winter</h3>
+            </li>
+            <li class="friends_item">
+                <img class="friends__photo" src="renee.jpg" alt="Amigo 3">
+                <h3 class="friends__name">Reneé</h3>
+            </li>
+            <li class="friends_item">
+                <img class="friends__photo" src="MariahFestive.jpg" alt="Amigo 4">
+                <h3 class="friends__name">MARIAH</h3>
+            </li>
+        </ul>
+    </section>
+    <hr>
+   
+    <section class="gallery">
+        <h2 class="gallery__tittle">Galeria de Fotos</h2>
+        <hr>
+        <ul class="gallery__grade">
+            <li class="gallery__item">
+                <img class="gallery__photo" src="BridgetVoando2.jpg" alt="Foto 1">
+                <p class="img__description">#NewProfilePic !!!!!</p>
+            </li>
+            <li class="gallery__item">
+                <img class="gallery__photo" src="EllaEBri.jpg" alt="Foto 2">
+                <p class="img__description">BEST FRIENDS 4EVER</p>
+            </li>
+            <li class="gallery__item">
+                <img class="gallery__photo" src="BriAndRedBTS.jpg" alt="Foto 3">
+                <p class="img__description">love this crew</p>
+            </li>
+            <li class="gallery__item">
+                <img class="gallery__photo" src="BRIeEllaSentadas.jpg" alt="Foto 4">
+                <p class="img__description">hppbday to my soulmate friendship<3</p>
+            </li>
+            <li class="gallery__item">
+                <img class="gallery__photo" src="Shuffle.jpg" alt="Foto 5">
+                <p class="img__description">What a amazing time practicing!!!!!!</p>
+            </li>
+            <li class="gallery__item">
+                <img class="gallery__photo" src="BriRedChole.jpg" alt="Foto 6">
+                <p class="img__description">love</p>
+            </li>
+            <li class="gallery__item">
+                <video class="gallery__photo" src="VIDEO.mp4" alt="Video 1"></video>
+                <p class="img__description">zzzzz</p>
+            </li>
+            <li class="gallery__item">
+                <img class="gallery__photo" src="BRInoCarro.jpg" alt="Foto 8">
+                <p class="img__description">sleeps</p>
+            </li>
+
+        </ul>
+    </section>
+
+     <footer class="footer">
+        <a href="" class="footer__link">Políticas de Privacidade</a>
+        <a href="" class="footer__link">Termos de uso</a>
+    </footer>
+</body>
+</html>
